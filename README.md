@@ -47,3 +47,17 @@
   * type some words and press tab (you need not to type full word)
 #### mkdir
   * make a directory
+#### awk
+    let's do create file by vim test.txt
+    Type Your Name 
+         Testing 1
+         Hello World 
+         Test 
+         Just as Example
+      save the file by (esc; shift-colon) wq
+      1. awk '{print}' test.txt ---will print all
+      2. awk '{print $1}' test.txt --will print 1st column
+      3. awk '{print $2}' test.txt --will print 2nd column 
+      4. awk '{print $1,$2}' test.txt --will print both 1st and 2nd column with space
+      5. awk '{print $1.$2}' test.txt --will print both 1st and 2nd column without space
+       
