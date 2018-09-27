@@ -88,5 +88,5 @@
           "field1","field2","field3"
         1. awk -F "," '{print $3}' test.txt --will print "field3"
         2. awk -F "," '{print $3}' test.txt | sed 's/"//g' -- will print field3 by extracting string between doulbe quotes
-        3. awk -F "," '{print $3}' test.txt | sed 's/"/rock/g' --will print rockfieldrock
-       
+        3. awk -F "," '{print $3}' test.txt | sed 's/"/rock/g' --will print rockfield3rock
+        4. awk -F "," '{print $1,$3}' test.txt | sed 's/"/rock/g' --will print rockfield1rock rockfield3rock
