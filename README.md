@@ -52,12 +52,23 @@
     Type Your Name 
          Testing 1
          Hello World 
-         Test 
-         Just as Example
+         TesT
+         123 Testing
       save the file by (esc; shift-colon) wq
       1. awk '{print}' test.txt ---will print all
       2. awk '{print $1}' test.txt --will print 1st column
       3. awk '{print $2}' test.txt --will print 2nd column 
       4. awk '{print $1,$2}' test.txt --will print both 1st and 2nd column with space
       5. awk '{print $1.$2}' test.txt --will print both 1st and 2nd column without space
+      6. awk '/test/ {print}' test.txt --will print nothing as it is case sensative
+      7. awk '/Test/ {print}' test.txt --will print Testing 1 and 123 Testing 
+      8. awk '/TesT/ {print}' test.txt --will print TesT
+      9. awk '/[a-z]/{print}' test.txt --will grab every line that contains at least one lower case letter
+      10. awk '/[0-9]/{print}' test.txt --will grab every line that contains numbers
+      11. awk '/^[0-9]/{print}' test.txt --will show every line that starts with a number
+      12. awk '/[0-9]/${print}' test.txt --will show every line that ends with a number
+      13. awk '{if($1~/123/) print}' test.txt --will print 1st column equals to 123 i.e. 123 Testing
+      14. awk '{if($1~/[0-9]/) print}' test.txt --will print 1st column equals to number i.e. 123 Testing
+      15. awk '{if($2~/[0-9]/) print}' test.txt --will print 2nd column that is equal to number i.e. 1 Testing
+
        
