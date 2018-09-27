@@ -83,5 +83,10 @@
          123 Testing: what's going on
        1. awk -F: '{print $2}' test.txt --will return 2nd column after the colon
        2. awk -F: '{print $1}' test.txt --will return 1st column before the colon
-
+       
+       For ex: if you overwrite by
+          "field1","field2","field3"
+        1. awk -F "," '{print $3}' test.txt --will print "field3"
+        2. awk -F "," '{print $3}' test.txt | sed 's/"//g' -- will print field3 by extracting string between doulbe quotes
+        3. awk -F "," '{print $3}' test.txt | sed 's/"/rock/g' --will print rockfieldrock
        
