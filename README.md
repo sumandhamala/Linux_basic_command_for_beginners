@@ -70,5 +70,10 @@
       13. awk '{if($1~/123/) print}' test.txt --will print 1st column equals to 123 i.e. 123 Testing
       14. awk '{if($1~/[0-9]/) print}' test.txt --will print 1st column equals to number i.e. 123 Testing
       15. awk '{if($2~/[0-9]/) print}' test.txt --will print 2nd column that is equal to number i.e. 1 Testing
+      
+      GREP
+      
+      1. grep -i test test.txt --search for everything that has test
+      2. 
 
        
