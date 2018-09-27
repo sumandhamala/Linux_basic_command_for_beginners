@@ -1,5 +1,5 @@
 ## Linux_basic_command_for_beginners
-#### vim
+#### vim or vi
   * create file and open/edit
 #### touch
   * create empty file
@@ -47,7 +47,7 @@
   * type some words and press tab (you need not to type full word)
 #### mkdir
   * make a directory
-#### awk
+#### awk and grep
     let's do create file by vim test.txt
     Type Your Name 
          Testing 1
@@ -74,6 +74,14 @@
       GREP
       
       1. grep -i test test.txt --search for everything that has test
-      2. 
+      2. grep -i test test.txt | awk '/^[0-9]/{print}' --will print 123 Testing 
+      
+      For ex: if you overwrite by 
+         Testing 1: abdsfadf
+         Hello World: how r you
+         TesT:blabla
+         123 Testing: what's going on
+       1. awk -F: '{print $2}' test.txt --will return 2nd column after the colon
+       2. awk -F: '{print $1}' test.txt --will return 1st column before the colon
 
        
