@@ -91,7 +91,7 @@
         3. awk -F "," '{print $3}' test.txt | sed 's/"/rock/g' --will print rockfield3rock
         4. awk -F "," '{print $1,$3}' test.txt | sed 's/"/rock/g' --will print rockfield1rock rockfield3rock
    #### for loop
-       * for sth in {1..5}
+       for sth in {1..5}
        do
        echo $sth
        done --- will print 1 to 5
