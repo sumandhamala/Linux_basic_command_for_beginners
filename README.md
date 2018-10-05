@@ -97,6 +97,8 @@
        done --- will print 1 to 5
    #### to save file after grep and awk
         1. awk '{if($2~/1/)print}' mainfile.csv>>newfile.csv--will save second column with value 1 in new file
-        2. grep -i 1 mainfile.csv | vim newfile.csv --will save the file having value 1 in new file
+        2. grep -i 1 mainfile.csv>>newfile.csv --will save the file having value 1 in new file
+        3. > means to save a file by complete overwrite.
+        4. >> means to save a file by adding content at the end of the file.
 
 
