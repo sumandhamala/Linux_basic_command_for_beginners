@@ -1,7 +1,7 @@
-## hi
+
 #!/bin/bash
 ### Read an Input from Keyboard
-echo -n "What is your name? "
+   * echo -n "What is your name? "
 read Name
 echo
 echo "Hello there $Name"
