@@ -1,5 +1,5 @@
-#!/bin/bash
 ### Basic Menu
+  * kk
     echo "What would you like to do today? "
     echo "1. Have a beer"
     echo "2. Go to work"
