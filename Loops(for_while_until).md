@@ -1,5 +1,5 @@
-#!/bin/bash
 
+#!/bin/bash
 ### For Loop
       echo "List all files of a specific type in a folder"
       for i in $(ls ~/Videos/ | grep .mp4); do
