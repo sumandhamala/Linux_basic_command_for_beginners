@@ -28,22 +28,22 @@
         echo "Count is" $Count
         let Count=Count+1
       done
+### Until 
+      echo
+      echo "Infinite loop until 'break' statement"
+      while [ 1 ]; do
+        echo -n "Do you want to leave the loop yet?"
+        read Choice
+        if [[ $Choice == "y" ]]; then
+          break
+        fi
+      done
 
-echo
-echo "Infinite loop until 'break' statement"
-while [ 1 ]; do
-  echo -n "Do you want to leave the loop yet?"
-  read Choice
-  if [[ $Choice == "y" ]]; then
-    break
-  fi
-done
-
-Loop=1
-while [ $Loop -eq 1 ]; do
-  echo -n "Do you want to leave the loop yet?"
-  read Choice
-  if [[ $Choice == "y" ]]; then
-    Loop=0
-  fi
-done
+      Loop=1
+      while [ $Loop -eq 1 ]; do
+        echo -n "Do you want to leave the loop yet?"
+        read Choice
+        if [[ $Choice == "y" ]]; then
+          Loop=0
+        fi
+      done
