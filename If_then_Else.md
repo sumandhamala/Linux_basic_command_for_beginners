@@ -1,11 +1,10 @@
 #!/bin/bash
-
 ### Basic Menu
     echo "What would you like to do today? "
-echo "1. Have a beer"
-echo "2. Go to work"
-read Idea
-echo
+    echo "1. Have a beer"
+    echo "2. Go to work"
+    read Idea
+    echo
 
 if [[ $Idea == 1 ]]; then
   echo "Excellent choice"
