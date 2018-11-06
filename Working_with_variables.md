@@ -6,7 +6,7 @@
      echo
      echo "Hello there $Name"
      echo "Press any key to continue..."
-     read -rn1
+     read -n 1
 
 ### Results back from system commands
     echo "You are running $(lsb_release -sd) with kernel $(uname -r)"
@@ -17,6 +17,12 @@
      a=$((a * b))
      let "a+=1"
      echo "a = $a"                                                  #a = 11
+     
+     a=2
+     b=5
+     a=$((a*b))
+     #a+=1
+     echo "a = $a b = $b"
 
 ### Concatenating Strings
      c="Hello "
