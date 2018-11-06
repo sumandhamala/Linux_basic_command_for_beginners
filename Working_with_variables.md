@@ -1,3 +1,4 @@
+## hi
 #!/bin/bash
 ### Read an Input from Keyboard
 echo -n "What is your name? "
