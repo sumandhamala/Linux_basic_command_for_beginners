@@ -14,12 +14,12 @@ else
   "Eh what now?"
 fi
 
-#Not Equal
+### Not Equal
 if [[ 0 != 1 ]]; then
   echo "Zero is not equal to One"
 fi
 
-#Arithmetic Comparison - Use Within double parantheses (( ... ))
+### Arithmetic Comparison - Use Within double parantheses (( ... ))
 Num1=10
 Num2=5
 
@@ -30,7 +30,7 @@ else
 fi
 
 
-#Logical AND
+### Logical AND
 Var1=1
 Var2=1
 Var3=0
@@ -40,7 +40,7 @@ else
   echo "Either Var1 or Var2 is False"
 fi
 
-#Logical OR (Alternate if statement)
+### Logical OR (Alternate if statement)
 if [[ $Var 2 == 1 ]] || [[ $Var3 = 1 ]]; then
   echo "Either Statement is True"
 else
