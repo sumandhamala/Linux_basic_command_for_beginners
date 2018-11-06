@@ -1,5 +1,5 @@
 #!/bin/bash
-  *  #Read an Input from Keyboard
+### Read an Input from Keyboard
 echo -n "What is your name? "
 read Name
 echo
@@ -7,28 +7,28 @@ echo "Hello there $Name"
 echo "Press any key to continue..."
 read -rn1
 
-#Results back from system commands
+### Results back from system commands
 echo "You are running $(lsb_release -sd) with kernel $(uname -r)"
 
-#Integers with some maths
+### Integers with some maths
 a=2
 b=5
 a=$((a * b))
 let "a+=1"
 echo "a = $a"                                                  #a = 11
 
-#Concatenating Strings
+### Concatenating Strings
 c="Hello "
 c+="World"
 echo "$c"
 
-#Alternate Method of Concatenating Strings
+### Alternate Method of Concatenating Strings
 d="Messing"
 d=${d}"with alternate methods"
 echo
 echo "$d"
 
-#Substrings
+### Substrings
 Str="abcdefghij
 echo "Str is: $Str"                                             #abcdefghijk
 echo "After the first three characters: ${Str:3}"               #defghijk
