@@ -4,12 +4,13 @@
     echo "2. Go to work"
     read Idea
     echo
-     if [[ $Idea == 1 ]]; then
-      echo "Excellent choice"
+
+    if [[ $Idea == 1 ]]; then
+    echo "Excellent choice"
     elif [[ $Idea == 2 ]]; then
-      echo "Boring"
+    echo "Boring"
     else
-      "Eh what now?"
+    "Eh what now?"
     fi
 
 ### Not Equal
