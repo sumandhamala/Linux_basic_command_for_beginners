@@ -113,4 +113,144 @@ mutt -s 'Test email' -m -a abc.txt robin.awscloud@gmail.com
 
 echo -n : don't print the new line
 echo /n : new line 
+=========================================================================
+1. On bash ssh-keygen -t rsa
+2. cd .ssh
+3. under settings in github. copy the public key to ssh key option 
+4. clone repo using ssh 
+5. copy id_rsa.pub and go to ec2 and keypairs under network and security
+6. import key pair and paste 
+7. copy file from 1 file to another:
+--> scp file.txt user@ip:/tmp/destfile.txt
+Note: the public key must be shared
+8. zip for folder and unzip into destination (if you want to move dir)
+to zip:: tar -czvf sample.tar.gz sample/
+to unzip: tar -xvzf sample.tar.gz
+..............................................
+1. each and every command will have unique process and each process has unique Id
+2. parent process can have child process and different_id's
+3. sleep 5  -- 5 second sleep
+3.5.  sleep 100 & --    & will run process on behind
+3.6. the process dies if you do exit
+4. nohup sleep 100 & -- even you close it , your command is running.
+5. run process in back - daemon
+6. windos R services.msc -- see all running process on back
+
+
+7. nohup a.sh &
+8. kill process(id) you can know by ps -eaf | grep -i "a.sh"
+9. kill -9 1234 -- kill the process_id forefully
+10. which process is consuming a lot of memory and CPU usage
+11. swap memory in top commad 
+12. to kill zombie process -- ps -aux  (stat will be z)
+13. free -h --- will give you memory details 
+14. grep "ec2user" abc.txt -- shows ec2user inside txt
+15. grep -i (case insensative)
+16. uptime -p (since how long machine is up)
+17 uname -a : complete version of linux
+18. cat /proc/meminfo --memory related information
+     cat /proc/cpuinfo --cpu related info
+     to see how many cpu you are running and count processor
+19. df -h  --- human
+20. du --- disk usage
+21. nslookup or ping
+22. free | tail -2 | awk '{ping $0}'
+23. sed --look more 
+...........................................
+
+1. telnet: to check if the port is open or not
+uname -a : to know which machine is it
+rhel -rpm --rpm install (pkg)    sudo yum -will install pkg as well as dependencies
+ubuntu -debian
+alpine apk(docker)
+centos
+
+configuration files packages  cd /etc/yum.repos.d  and cat 
+
+service = long running process
+systemctl helps to start, stop, restart, status . open security group port 80
+
+sudo yum install httpd
+sudo systemctl start httpd
+check service ---sudo systemctl status httpd
+top (see the process that are consuming resourses)
+sudo yum list install
+sudo visudo (never edit in office)
+
+yum list installed | gerp -i "telnet"
+
+
+cd /etc/sudoers.d/     --- create a name of user
+
+copy from ec2 to local : scp -i keypairname ec2-user@ip:/path .
+
+echo $PATH:/usr/sbin
+export $PATH 
+......................
+
+sudo install nptd why??
+env
+echo $PATH
+echo $PATH:/usr/sbin
+export $PATH
+echo $PATH
+
+ubuntu : sudo apt-get install/update
+web errors 403 not found,200 ok,304 moved,301 another layer,500(check?) load balancer issue
+curl -I (link)
+to download curl -I (link) -o filename
+curl -K :to eradicate SSL certification
+find: to identify and delete. let's say 30 days old file
+find ./ -name 
+find ./ -mtime +20 | wc -l                 ---wc will count(not modified in last 20 days)
+find ./ -mtime -20 | wc -l     -modified in last 20 days (but check)
+sudo!! will execute previous command as root
+find ./ -mtime +20 | wc -l  --delete  --will delete
+find /path/to -type f(is file ,d is directory) 
+df -h : free space
+du : used space
+
+
+
+
+!!! Troubleshooting Tips
+
+1.  vi /etc/resolve.conf
+you will see the dns entry server   --- we add the dns-server ip into resole.conf
+
+ nslookup and ping 
+2.  vi hosts
+set hostname of the machine
+
+nslookup and ping ..
+dig ip
+4times16  4 cpu, 16 RAM
+
+userdel -- delete the user
+wc --how many programms are installed word count   -l means lines
+telnet -- to check if the port is open or not
+curl -- verify if the status 
+free --how much memory is free and used
+scp -r check??
+awk --cut the output by column wise
+nohub --run in backgroud
+
+crontab -l to list
+crontab -e to edit
+
+...................
+request form
+<project>
+<projectId>
+<cost center>
+configuration: OS, CPU, RAM, Storage
+
+centos (sibbling of rhel ), rhel is paid centos is free
+
+yum remove ...
+yum clean
+yum loacalinstall (rpmfilename)
+
+alias l='touch abc.txt' 
+l --will create a file 
 
