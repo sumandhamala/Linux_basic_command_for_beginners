@@ -106,3 +106,11 @@ yum install $1 2> dev/null --- standard err will not show failed executions on t
 yum install $1 > /dev/null 2>&1
 
 yum.repos.d -- files are stored here(installed ones)
+.............................................................
+for sending email =>
+sudo yum install mutt
+mutt -s 'Test email' -m -a abc.txt robin.awscloud@gmail.com
+
+echo -n : don't print the new line
+echo /n : new line 
+
