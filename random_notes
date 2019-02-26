@@ -1,0 +1,100 @@
+Inside vi editor
+w --- forward
+b --- backward
+0 --- start of the line 
+$ --- end of the line
+a --- end of the line append and insert
+
+:set number
+
+date '+%Y%m%d'
+
+
+var1=10
+var2=20  echo "$var1 + $var2"
+to execute $((var1+var2))
+you can do var3=$((var1+var2)) as well 
+
+echo"this is \$var1" --not considering it has some values: escape character
+
+
+if you want to create a marker--
+touch abc_log_$var3
+
+you can also
+
+fname "abc_log_$var3"
+touch $fname
+
+echo "first line" > $fname
+echo "second line" >> $fname  --- single > will overwrite, >> will append
+
+echo -e "San\nQuest" will print San
+                                Quest
+
+
+
+
+
+** power
+
+
+
+
+
+
+
+
+
+
+..................................
+
+mydate=$(date)
+echo "$mydate"
+
+memory=$(free)
+echo "$memory"
+....................we can also
+totol_mem=$(free)
+free_mem=$(free | aws '{print $2}') | head -2 | tail -1
+used_mem=$(free ...)
+echo "tolat memory :$total_mem"
+...............
+myhost=$(hostname)
+echo "myhost"
+...............
+ls | wc -l  --- file count
+filecount=$(ls ~/ | wc -l)
+echo "$filecount"
+...............
+read -p "balbal" var1
+if [[ $var1 -le 0 ]]; then
+	echo "-ve number"
+fi
+..
+echo "$var1"
+let var1+=100
+
+...............
+-lt =lessthan
+-le =lessthanequalto
+-gt = greaterthan
+-ge=greaterthanequalto
+-eq =equalto
+..................... (logical and +ve and <=10) you will use &&
+
+in case of strings:
+== equal
+=! notequal
+<
+>
+<=
+>=
+||  OR(if 1st parameter fails, goes to 2nd)   --   | in switch case
+&& AND(BOTH TRUE)
+
+
+..................
+[ -e abc.txt | echo "file doesn't exist" ] if file exists do nth if not,print msg
+[ -e abc.txt ] || touch abc.txt  -- if exists fine,  creates abc.txt if doesn't finds one
+[ -d abc ] || mkdir abc    --for directory
