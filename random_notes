@@ -253,4 +253,108 @@ yum loacalinstall (rpmfilename)
 
 alias l='touch abc.txt' 
 l --will create a file 
+=================================================================================================
+ls -latr
+
+git config --global user.name "Robin Gautam"
+
+git config --global user.email "robin.awscloud@gmail.com"
+
+mv newfile onlfile
+
+git status:
+    untracked files:red color
+	So, you need to track the files
+by adding it to staging area.
+
+do git add filename and it will appear green if you do git status
+
+git commit -m 
+
+now try git status-- nothing to comit, working tree clean
+
+once you modify first.java, do git status, you should again do git add
+git commit -m
+
+In case you have 100 of files, git add .
+
+git log --- to see the logs. (history)
+
+
+linux
+...................................................
+x delete character
+dd delete line
+mv acts as cut and paste (fileyouwanttocopy) (replacingfilename)
+cp acts as copy and paste 
+ls -la (to see hidden file ) -- you can also see .git file here
+use ps for running processs like ps -ef | grep java
+use top to see memory utilization 
+use df -ah for disk space
+du -sk *|sort -rn --displays files or directories with highest sizes
+find / -name "filename" --be in root and search 
+find -user ubuntu -to see all files created by ubuntu user
+find / -name sample.txt -exec rm -f{}\; find and delete
+
+find files ending with .jpg that are 30 days old and remove them
+with find and -mtime + 30 exec rm -f{}\;
+
+whoami
+root
+
+hostname
+www.xyz.com
+
+uptime
+user and avg load
+
+permisson
+user groups and others respectively
+644 files default
+755 dir default
+
+chmod-change file permission
+chmod 650 file1
+chmod -R 750 dir1
+
+chown -change ownership
+chown -user1:user1 <name of file>
+chown -R -user1:user1 <name of folder>
+
+umask --that set's default permission
+lets say if theres 0022
+777 - 022 = 755 666 - 033 = 644 thats what directory and file permission are set
+set umask in .bashrc file
+
+
+...................................................
+do git clone add a new target and push ____
+push an existing repository from the command line
+git remote add origin1(target) https://github.com/mmm
+git remote -v 
+git push target master
+
+>>>>>>>
+ * Clone the repo to your local machine.
+  * git remote rename origin upstream
+  * git remote add origin URL_TO_GITHUB_REPO
+  * git push origin master
+  * Now you can work with it just like any other github repo. To pull in patches from upstream, simply run git pull upstream master && git push origin master.>>>>
+
+git reset (commit_Id) by git log
+git reset (commit_id) --hard will delete entire thing
+git checkout -- first.java (will delete first.java)
+
+
+............
+local traffic manager
+global traffic manager
+RPO: upto 30 mins
+RTO: DR excercise, to see data in secondary will run properly
+release branch. (after developing in github)
+migrating from SVN to git
+............
+services.msc in wintows + R
+............
+cd ../../etc or cd /etc: shortcut 
 
