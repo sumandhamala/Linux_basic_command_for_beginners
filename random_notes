@@ -98,3 +98,11 @@ in case of strings:
 [ -e abc.txt | echo "file doesn't exist" ] if file exists do nth if not,print msg
 [ -e abc.txt ] || touch abc.txt  -- if exists fine,  creates abc.txt if doesn't finds one
 [ -d abc ] || mkdir abc    --for directory
+
+
+......................
+
+yum install $1 2> dev/null --- standard err will not show failed executions on terminal
+yum install $1 > /dev/null 2>&1
+
+yum.repos.d -- files are stored here(installed ones)
