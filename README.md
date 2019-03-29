@@ -102,5 +102,7 @@
         4. >> means to save a file by adding content at the end of the file.
         5. echo "success" --which helps you to see if the script worked on real
         6. after vi script.sh and writing the above code run sh script.sh, you should see success
-
+#### tee command
+  * echo $(date) > abc.txt   is equal to == date | tee abc.txt
+  * echo $(date) >> abc.txt is equal to == date | tee -a abc.txt
 
