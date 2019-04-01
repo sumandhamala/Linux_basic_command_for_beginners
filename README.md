@@ -105,4 +105,7 @@
 #### tee command
   * echo $(date) > abc.txt   is equal to == date | tee abc.txt
   * echo $(date) >> abc.txt is equal to == date | tee -a abc.txt
-
+#### netstat command
+  * netstat -anp || grep LISTEN   ---- will show all ports opened
+#### telnet
+  * telnet IP_add 8080  -- will show if you have 8080 port open in that IP. If it's opend it gives connected message
