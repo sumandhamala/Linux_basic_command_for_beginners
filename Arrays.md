@@ -1,3 +1,5 @@
+# shell script
+
 #!/bin/bash
 #Video: https://youtu.be/FBv7aEn2Cik
 
